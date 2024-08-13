@@ -1,0 +1,6 @@
+DO_TOKEN     = ""
+SSH_NAME     = ""
+REGION       = ""
+IMAGE        = ""
+SIZE         = ""
+DROPLET_NAME = ""
