@@ -1,35 +1,41 @@
 variable "DO_TOKEN" {
-  default = ""
+  default     = ""
   description = "Digital Ocean access token"
-  type = string
+  type        = string
 }
 
 variable "SSH_NAME" {
-  default = ""
+  default     = ""
   description = "Digital Ocean SSH key name"
-  type = string
+  type        = string
 }
 
 variable "REGION" {
-  default = "nyc1"
+  default     = "nyc1"
   description = "Digital Ocean default region"
-  type = string  
+  type        = string
 }
 
 variable "IMAGE" {
-  default = "ubuntu-22-04-x64"
+  default     = "ubuntu-22-04-x64"
   description = "OS image for droplet"
-  type = string
+  type        = string
 }
 
 variable "SIZE" {
-  default = "s-1vcpu-1gb"
+  default     = "s-1vcpu-1gb"
   description = "Size of the droplet"
-  type = string
+  type        = string
 }
 
 variable "DROPLET_NAME" {
-  default = "my-server"
+  default     = "my-server"
   description = "Droplet name"
-  type = string
+  type        = string
+}
+
+variable "vms_count" {
+  default     = 1
+  type        = number
+  description = "VMs quantity"
 }

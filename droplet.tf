@@ -4,5 +4,5 @@ resource "digitalocean_droplet" "my-server" {
   region   = var.REGION
   image    = var.IMAGE
   ssh_keys = [data.digitalocean_ssh_key.ssh_key.id]
-  count = 1
+  count    = var.vms_count
 }
